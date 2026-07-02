@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Whitelist Wealth — Trybe Brand Intel</title>
-<meta name="description" content="See real ad spend, competition, and WW Scores on every Trybe brand — right on the page.">
+<title>Whitelist Wealth — The Trybe Creator Operating System</title>
+<meta name="description" content="See real ad spend, WW Scores, sample deadlines, and your live video performance on every Trybe brand — then repurpose every video to TikTok, Reels, Shorts & Facebook in two clicks.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0A0A0A;--surface:#141414;--surface-2:#1B1B1B;--border:#262626;
   --emerald:#10B981;--emerald-bright:#34D399;--gold:#F59E0B;
-  --text:#F5F5F5;--text-dim:#9CA3AF;--danger:#EF4444;--radius:12px;
+  --text:#F5F5F5;--text-dim:#9CA3AF;--danger:#EF4444;--radius:14px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -20,30 +20,31 @@ body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-
 a{color:var(--emerald);text-decoration:none}
 h1,h2,h3{font-weight:800;letter-spacing:-0.02em;line-height:1.15}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-.btn{display:inline-block;padding:14px 26px;border-radius:10px;font-weight:700;font-size:15px;cursor:pointer;border:none;transition:.15s}
-.btn-primary{background:var(--emerald);color:#000}
-.btn-primary:hover{background:var(--emerald-bright)}
+.btn{display:inline-block;padding:14px 26px;border-radius:11px;font-weight:700;font-size:15px;cursor:pointer;border:none;transition:.18s}
+.btn-primary{background:var(--emerald);color:#000;box-shadow:0 0 24px rgba(16,185,129,.25)}
+.btn-primary:hover{background:var(--emerald-bright);transform:translateY(-1px);box-shadow:0 6px 30px rgba(16,185,129,.4)}
 .btn-secondary{background:transparent;color:var(--emerald);border:1px solid var(--emerald)}
-.btn-secondary:hover{background:rgba(16,185,129,.1)}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:.15s}
-.card:hover{box-shadow:0 0 0 1px rgba(16,185,129,.4)}
-/* nav */
-nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.btn-secondary:hover{background:rgba(16,185,129,.1);transform:translateY(-1px)}
+.card{background:linear-gradient(180deg,#161616,#111);border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:.18s}
+.card:hover{border-color:rgba(16,185,129,.45);box-shadow:0 8px 32px rgba(0,0,0,.4),0 0 0 1px rgba(16,185,129,.2);transform:translateY(-2px)}
+.badge{display:inline-block;font-weight:800;font-size:11px;padding:4px 10px;border-radius:20px;letter-spacing:.04em}
+.badge.free{background:rgba(16,185,129,.15);color:var(--emerald-bright)}
+.badge.member{background:rgba(245,158,11,.15);color:var(--gold)}
+nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.04em;color:var(--text);font-size:14px}
-.monogram{width:32px;height:32px;background:#000;border:1px solid var(--emerald);border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--emerald);font-size:12px}
+.monogram{width:32px;height:32px;background:#000;border:1px solid var(--emerald);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--emerald);font-size:12px;box-shadow:0 0 12px rgba(16,185,129,.35)}
 .nav-links{display:flex;align-items:center;gap:22px;font-size:14px}
-.nav-links a{color:var(--text-dim)}
-.nav-links a:hover{color:var(--text)}
+.nav-links a{color:var(--text-dim)}.nav-links a:hover{color:var(--text)}
 .nav-links .btn{padding:9px 16px;font-size:13px}
-/* hero */
-.hero{padding:90px 0 70px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero{padding:84px 0 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 .hero h1{font-size:46px;margin-bottom:18px}
-.hero .sub{color:var(--text-dim);font-size:18px;margin-bottom:28px}
+.hero h1 .em{color:var(--emerald-bright)}
+.hero .sub{color:var(--text-dim);font-size:18px;margin-bottom:26px}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px}
 .micro{color:var(--text-dim);font-size:13px}
-/* mock panel */
-.mock{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px;font-size:14px;box-shadow:0 0 40px rgba(16,185,129,.12)}
+.pricebump{display:inline-block;margin-top:10px;background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.4);color:#fca5a5;font-size:12px;font-weight:700;border-radius:9px;padding:6px 12px}
+.mock{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px;font-size:14px;box-shadow:0 0 60px rgba(16,185,129,.14)}
 .mock-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
 .mock-head .name{font-weight:800;font-size:18px}
 .score-badge{background:var(--emerald);color:#000;font-weight:800;border-radius:8px;padding:4px 10px;font-size:15px}
@@ -51,37 +52,38 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.92);backdrop-filt
 .mock .row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--surface-2)}
 .mock .row span:last-child{font-weight:600}
 .early{display:inline-block;background:rgba(16,185,129,.15);color:var(--emerald-bright);font-weight:700;font-size:11px;padding:3px 8px;border-radius:6px;margin-top:10px}
-.mock .save{margin-top:14px;width:100%;text-align:center}
-/* sections */
-section{padding:70px 0}
-section h2{font-size:34px;margin-bottom:18px;text-align:center}
+section{padding:64px 0}
+section h2{font-size:34px;margin-bottom:14px;text-align:center}
+.section-sub{max-width:660px;margin:0 auto 8px;color:var(--text-dim);font-size:16px;text-align:center}
 .problem p{max-width:640px;margin:0 auto;color:var(--text-dim);font-size:17px;text-align:center}
-.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:36px}
-.features-grid h3{font-size:17px;margin-bottom:10px}
-.features-grid p{color:var(--text-dim);font-size:14px}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:36px}
+.features-grid h3{font-size:16px;margin:8px 0 8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.features-grid p{color:var(--text-dim);font-size:13.5px}
 .steps{display:flex;gap:18px;justify-content:center;margin-top:36px;flex-wrap:wrap}
-.step{flex:1;min-width:220px;text-align:center}
-.step .num{width:44px;height:44px;border-radius:50%;background:var(--surface-2);border:1px solid var(--emerald);color:var(--emerald);font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
-/* pricing */
+.step{flex:1;min-width:200px;text-align:center}
+.step .num{width:44px;height:44px;border-radius:50%;background:var(--surface-2);border:1px solid var(--emerald);color:var(--emerald);font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 0 14px rgba(16,185,129,.25)}
+.step h3{font-size:16px;margin-bottom:6px}
+.step p{color:var(--text-dim);font-size:13px}
+.flow{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:30px;font-weight:700;font-size:14px}
+.flow .chip{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 18px}
+.flow .chip.green{border-color:var(--emerald);color:var(--emerald-bright);box-shadow:0 0 16px rgba(16,185,129,.2)}
+.flow .arrow{color:var(--text-dim)}
 table{width:100%;border-collapse:collapse;margin-top:36px;background:var(--surface);border-radius:var(--radius);overflow:hidden}
-th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--border);font-size:14px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--border);font-size:14px}
 th{background:var(--surface-2);font-size:15px}
-th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3){text-align:center}
+th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3){text-align:center;white-space:nowrap}
 th:last-child{color:var(--emerald)}
+td .sub{display:block;color:var(--text-dim);font-size:12px;font-weight:400}
 .pricing-foot{text-align:center;margin-top:28px}
 .pricing-foot .tag{font-weight:800;font-size:18px;margin-bottom:18px}
-/* faq */
 details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:10px;padding:18px 22px}
 summary{cursor:pointer;font-weight:600;font-size:15px}
 details p{color:var(--text-dim);margin-top:10px;font-size:14px}
-/* final cta */
 .final{text-align:center}
 .final .hero-ctas{justify-content:center;margin-top:24px}
 footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color:var(--text-dim);font-size:13px}
-footer a{color:var(--text-dim);margin:0 10px}
-footer a:hover{color:var(--text)}
-/* modal */
-.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+footer a{color:var(--text-dim);margin:0 10px}footer a:hover{color:var(--text)}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
 .modal-bg.open{display:flex}
 .modal{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:34px;max-width:420px;width:100%}
 .modal h3{font-size:22px;margin-bottom:10px}
@@ -108,96 +110,126 @@ footer a:hover{color:var(--text)}
 <nav><div class="wrap nav-inner">
   <div class="logo"><div class="monogram">WW</div>WHITELIST WEALTH</div>
   <div class="nav-links">
+    <a href="#next">What happens next</a>
     <a href="#features">Features</a>
-    <a href="#pricing">Pricing</a>
+    <a href="#pricing">Free vs Full</a>
     <a href="#faq">FAQ</a>
     <a class="btn btn-secondary" href="#" onclick="openModal();return false">Try Free</a>
-    <a class="btn btn-primary" id="skool-nav" href="#" target="_blank" rel="noopener">Get Full Access</a>
+    <a class="btn btn-primary skool-link" href="#" target="_blank" rel="noopener">Get Full Access</a>
   </div>
 </div></nav>
 
 <header class="hero wrap">
   <div>
-    <h1>Stop guessing which Trybe brands are worth your time.</h1>
-    <p class="sub">The Whitelist Wealth extension shows you real ad spend, creator competition, and a 0–100 score on every brand — right on the page while you browse.</p>
+    <h1>The operating system for <span class="em">Trybe creators</span>.</h1>
+    <p class="sub">Came from the YouTube video? This is that extension. It sits on top of Trybe and shows you real ad spend, a 0–100 score on every brand, your sample deadlines, your earnings, and a two-click system to repurpose every video to TikTok, Reels, Shorts &amp; Facebook.</p>
     <div class="hero-ctas">
       <button class="btn btn-primary" onclick="openModal()">Try It Free</button>
-      <a class="btn btn-secondary skool-link" href="#" target="_blank" rel="noopener">Get Full Access — $40/mo</a>
+      <a class="btn btn-secondary skool-link" href="#" target="_blank" rel="noopener">Get Full Access — <span class="price-label"></span></a>
     </div>
-    <p class="micro">Full access includes the entire Whitelist Wealth community — the course, weekly calls, exclusive brand deals, and the extension.</p>
+    <p class="micro">Full access = the entire Whitelist Wealth community: 8-module course, weekly live Q&amp;As, exclusive boosted brand deals, private chat — AND every extension tool.</p>
+    <span class="pricebump">⏰ Price is going up soon — members lock in their rate for life.</span>
   </div>
   <div class="mock">
     <div class="mock-head"><span class="name">HiStrips</span><span class="score-badge">⚡ 78</span></div>
     <div class="meta">Performance / Breathing · weekly payouts</div>
     <div class="row"><span>💰 Commission</span><span>10% of GMV</span></div>
-    <div class="row"><span>📣 Active Meta ads</span><span>37 <a href="#">↗</a></span></div>
+    <div class="row"><span>📣 Active Meta ads</span><span>37 ↗</span></div>
     <div class="row"><span>👥 Creators on brand</span><span>42</span></div>
-    <div class="row"><span>📈 Instagram</span><span>@histrips · 88K</span></div>
-    <div class="row"><span>🗓 On Trybe</span><span>100 days</span></div>
+    <div class="row"><span>⏰ Sample due</span><span>3 days left</span></div>
+    <div class="row"><span>🎬 Your videos</span><span>2 live as ads</span></div>
     <span class="early">🆕 EARLY OPPORTUNITY</span>
-    <div class="btn btn-secondary save">💾 Save to watchlist</div>
   </div>
 </header>
 
 <section class="problem"><div class="wrap">
   <h2>Every Trybe creator has the same problem.</h2>
-  <p>You join a brand. You make videos. You wait... and nothing happens. Why? The brand had no ad budget. No spend means no sales, and no sales means no commission. You can't see any of that from their Trybe page. Until now.</p>
+  <p>You join a brand. You make videos. You wait… and nothing happens. The brand had no ad budget — and you couldn't see that from their Trybe page. Meanwhile your sample deadlines slip, your best videos sit on one platform, and you have no idea which brand actually deserves your next video. This fixes all of it, right on the page.</p>
+</div></section>
+
+<section id="next"><div class="wrap">
+  <h2>What happens next</h2>
+  <p class="section-sub">Exactly four steps between you and your first data-driven brand pick:</p>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>Get free access</h3><p>Tap "Try It Free," drop your email — that's your key.</p></div>
+    <div class="step"><div class="num">2</div><h3>Install the extension</h3><p>One click from the Chrome Web Store. Desktop Chrome.</p></div>
+    <div class="step"><div class="num">3</div><h3>Open Trybe</h3><p>The WW toolbar appears at the top of jointrybe.com automatically. Enter the same email once.</p></div>
+    <div class="step"><div class="num">4</div><h3>Browse like normal</h3><p>Scores, ad spend, deadlines and your stats show up right on every brand page.</p></div>
+  </div>
 </div></section>
 
 <section id="features"><div class="wrap">
-  <h2>Built for creators who treat this like a business.</h2>
+  <h2>Every tool in the toolbar</h2>
+  <p class="section-sub">Green = in the free tier. Gold = full access.</p>
   <div class="features-grid">
-    <div class="card"><h3>⚡ WW Score</h3><p>Every brand gets a 0–100 score built from ad spend, competition, and commission. Stop wasting videos on dead brands.</p></div>
-    <div class="card"><h3>📣 Real Ad Spend</h3><p>See how many ads a brand is actually running on Meta before you film a single video.</p></div>
-    <div class="card"><h3>🆕 First-Mover Alerts</h3><p>Brand-new brands with almost no creators get flagged the moment they join. Early equals paid.</p></div>
-    <div class="card"><h3>👥 Competition Count</h3><p>Know exactly how many creators you're up against before you commit.</p></div>
+    <div class="card"><span class="badge free">FREE</span><h3>⏰ Sample Tracker</h3><p>Every approved sample with its 14-day deadline, sorted by urgency. Never tank your sample score because a due date slipped past you. Fully free — protecting your score shouldn't cost money.</p></div>
+    <div class="card"><span class="badge free">FREE</span><h3>📊 Brand Intel basics</h3><p>Brand directory, commission rates, and up to 3 saved brands while you test-drive it.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>⚡ WW Score</h3><p>A 0–100 score on every brand, built from real ad spend, competition, and commission. Stop wasting videos on dead brands.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>📣 Real Meta ad spend</h3><p>See how many ads a brand is actually running before you film a single video. No budget = no sales = no commission.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>🔥 Exclusive brand deals</h3><p>Deals negotiated for Whitelist Wealth members — guaranteed retainers and boosted pay-per-submission rates — right inside Brand Discovery.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>🎬 My Content + Repurpose Hub</h3><p>Every video you've ever submitted in one place. Download it, tap a platform button — TikTok, Reels, Shorts, Facebook — the create page opens with an SEO caption ready to paste. Check each platform off as it goes green.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>✨ AI Caption Packs</h3><p>Platform-tailored titles, captions, keywords and hashtags generated from your video's actual script — different copy for every platform.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>✍️ AI Script Writer</h3><p>Pulls the brand's top-performing scripts and builds you three fresh ones in your own voice.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>✅ Today's Checklist</h3><p>A daily game plan built from your own data: which video to push for ad spend, which brand is retainer-ready, which sample is due.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>💰 Earnings dashboard</h3><p>Goal tracker, payout calendar, and a weekly recap of what you actually made — pulled live from your account.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>🤝 Retainer Pitch tool</h3><p>One tap writes a retainer pitch using your real numbers with that brand — videos made, commissions driven, live ads.</p></div>
+    <div class="card"><span class="badge member">FULL</span><h3>🔎 TikTok → Trybe scanner</h3><p>Scans your whole TikTok profile, finds every video you already made for a Trybe brand, and lines them up for repurposing. Only matches when it's 100% certain.</p></div>
   </div>
 </div></section>
 
 <section><div class="wrap">
-  <h2>How it works</h2>
-  <div class="steps">
-    <div class="step"><div class="num">1</div><h3>Install the extension</h3></div>
-    <div class="step"><div class="num">2</div><h3>Browse Trybe like normal</h3></div>
-    <div class="step"><div class="num">3</div><h3>The intel shows up right on the page</h3></div>
+  <h2>Repurpose in two clicks</h2>
+  <p class="section-sub">Your winning videos shouldn't live on one platform. From My Content:</p>
+  <div class="flow">
+    <span class="chip">⬇ Download video</span><span class="arrow">→</span>
+    <span class="chip">Tap a platform</span><span class="arrow">→</span>
+    <span class="chip">Create page opens, caption ready</span><span class="arrow">→</span>
+    <span class="chip green">Post ✓ goes green</span>
   </div>
+  <p class="section-sub" style="margin-top:22px">Works with videos or images. You always press Post yourself — nothing is ever published without you.</p>
 </div></section>
 
 <section id="pricing"><div class="wrap">
-  <h2>Pricing</h2>
+  <h2>Free vs Full Access</h2>
   <table>
-    <tr><th></th><th>Free</th><th>Full Access — $40/mo</th></tr>
-    <tr><td>Brand directory basics</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Commission rates</td><td>✅</td><td>✅</td></tr>
+    <tr><th></th><th>Free</th><th class="price-label-th">Full Access</th></tr>
+    <tr><td>Sample Tracker <span class="sub">every deadline, urgency-sorted</span></td><td>✅ Full</td><td>✅ Full</td></tr>
+    <tr><td>Brand directory &amp; commission rates</td><td>✅</td><td>✅</td></tr>
     <tr><td>Saved brands</td><td>3 max</td><td>Unlimited</td></tr>
-    <tr><td>WW Score</td><td>🔒 Blurred</td><td>✅ Full</td></tr>
-    <tr><td>Real Meta ad spend</td><td>🔒</td><td>✅</td></tr>
-    <tr><td>First-mover alerts</td><td>🔒</td><td>✅</td></tr>
-    <tr><td>Whitelist Wealth community (8-module course, weekly calls, exclusive boosted brand deals, private chat)</td><td>—</td><td>✅ Included</td></tr>
+    <tr><td>WW Score <span class="sub">0–100 on every brand</span></td><td>🔒 Blurred</td><td>✅ Full</td></tr>
+    <tr><td>Real Meta ad spend + first-mover alerts</td><td>🔒</td><td>✅</td></tr>
+    <tr><td>One-click brand requests</td><td>🔒</td><td>✅</td></tr>
+    <tr><td>Exclusive WW brand deals <span class="sub">guaranteed retainers, boosted rates</span></td><td>🔒 Preview only</td><td>✅ Full + assigned via the agency</td></tr>
+    <tr><td>My Content + Repurpose Hub <span class="sub">TikTok · Reels · Shorts · Facebook</span></td><td>🔒</td><td>✅</td></tr>
+    <tr><td>AI Script Writer + AI Caption Packs</td><td>🔒</td><td>✅</td></tr>
+    <tr><td>Today's Checklist, Analytics &amp; Earnings dashboards</td><td>🔒 Teaser</td><td>✅ Full</td></tr>
+    <tr><td>Whitelist Wealth community <span class="sub">8-module course, weekly live Q&amp;As, private chat, affiliate program (40% recurring)</span></td><td>—</td><td>✅ Included</td></tr>
   </table>
   <div class="pricing-foot">
-    <p class="tag">One membership. The whole system.</p>
+    <p class="tag">One membership. The whole system. Lock your rate before the increase.</p>
     <div class="hero-ctas" style="justify-content:center">
       <button class="btn btn-secondary" onclick="openModal()">Try It Free</button>
-      <a class="btn btn-primary skool-link" href="#" target="_blank" rel="noopener">Get Full Access — $40/mo</a>
+      <a class="btn btn-primary skool-link" href="#" target="_blank" rel="noopener">Get Full Access — <span class="price-label"></span></a>
     </div>
   </div>
 </div></section>
 
 <section id="faq"><div class="wrap" style="max-width:720px">
   <h2>FAQ</h2>
-  <details><summary>Is the $40 for the extension or the community?</summary><p>Both. One membership gets you the full Whitelist Wealth community AND complete extension access. No separate charges.</p></details>
-  <details><summary>I'm already a Whitelist Wealth member — do I pay again?</summary><p>No. Your membership already includes full access. Install the extension and verify with the email you used to join Skool.</p></details>
-  <details><summary>Does it work on mobile?</summary><p>The extension runs on desktop Chrome. The community and brand directory work anywhere.</p></details>
-  <details><summary>Where does the data come from?</summary><p>Public sources — the Meta Ad Library, public brand pages, and our own continuously updated brand database.</p></details>
-  <details><summary>Can I cancel?</summary><p>Anytime, straight through Skool. No contracts.</p></details>
+  <details><summary>Is the membership for the extension or the community?</summary><p>Both — one membership. You get the full Whitelist Wealth community (course, weekly calls, exclusive deals, private chat) AND complete extension access. No separate charges, ever.</p></details>
+  <details><summary>I'm already a Whitelist Wealth member — do I pay again?</summary><p>No. Your membership already includes everything. Install the extension and verify with the email you used to join Skool.</p></details>
+  <details><summary>What exactly do I get for free?</summary><p>The full Sample Tracker (every deadline, nothing hidden), the brand directory with commission rates, and 3 saved brands. Free means free — no card required.</p></details>
+  <details><summary>Will the extension post to my social accounts?</summary><p>Never. The Repurpose Hub opens the platform's own create page with your caption ready — you always press Post yourself. Nothing is ever published without you.</p></details>
+  <details><summary>Does it work on mobile?</summary><p>The extension runs on desktop Chrome. The community and everything in it works anywhere.</p></details>
+  <details><summary>Where does the data come from?</summary><p>Public sources — the Meta Ad Library, public brand pages, our continuously updated brand database — plus your own Trybe account data, which never leaves your browser.</p></details>
+  <details><summary>Can I cancel?</summary><p>Anytime, straight through Skool. No contracts. (Fair warning: if the price has gone up since you joined, leaving means losing your locked-in rate.)</p></details>
 </div></section>
 
 <section class="final"><div class="wrap">
-  <h2>Your next winning brand is already on Trybe. Find it first.</h2>
+  <h2>Your next winning brand is already on Trybe.<br>Find it first.</h2>
   <div class="hero-ctas">
     <button class="btn btn-primary" onclick="openModal()">Try It Free</button>
-    <a class="btn btn-secondary skool-link" href="#" target="_blank" rel="noopener">Get Full Access — $40/mo</a>
+    <a class="btn btn-secondary skool-link" href="#" target="_blank" rel="noopener">Get Full Access — <span class="price-label"></span></a>
   </div>
 </div></section>
 
@@ -208,13 +240,12 @@ footer a:hover{color:var(--text)}
   Not affiliated with Trybe.
 </div></footer>
 
-<!-- email capture modal -->
 <div class="modal-bg" id="modal-bg" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <button class="close" onclick="closeModal()">✕</button>
     <div id="modal-form">
       <h3>Get free access</h3>
-      <p>Drop your email and we'll unlock the free tier of the extension.</p>
+      <p>Drop your email and we'll unlock the free tier of the extension — Sample Tracker included, no card required.</p>
       <input type="email" id="email-input" placeholder="you@email.com" autocomplete="email">
       <button class="btn btn-primary" id="submit-btn" onclick="submitEmail()">Get Free Access</button>
       <p class="err" id="email-err">That doesn't look like an email — double-check it.</p>
@@ -223,19 +254,23 @@ footer a:hover{color:var(--text)}
       <h3>You're in. 🎉</h3>
       <p><strong>Step 1:</strong> Install the extension from the Chrome Web Store.</p>
       <a class="btn btn-primary" id="install-btn" href="#" target="_blank" rel="noopener">Install Extension</a>
-      <p><strong>Step 2:</strong> Open it and enter this same email.</p>
+      <p><strong>Step 2:</strong> Open <a href="https://jointrybe.com/creator" target="_blank" rel="noopener">jointrybe.com</a> — the WW toolbar appears at the top.</p>
+      <p><strong>Step 3:</strong> Enter this same email in the toolbar once. Done.</p>
     </div>
   </div>
 </div>
 
 <script>
-// ======= SET THESE TWO CONSTANTS =======
+// ======= SET THESE CONSTANTS =======
 const BACKEND_BASE_URL = 'https://ww-backend-production.up.railway.app'; // Railway URL, no trailing slash
 const CHROME_STORE_URL = 'CHROME_STORE_URL_PLACEHOLDER';        // fill after Web Store approval
-// =======================================
+const PRICE = '$29/mo';                                          // update once on price-raise day
+// ===================================
 const SKOOL_URL = 'https://www.skool.com/whitelist-wealth/about';
 
 document.querySelectorAll('.skool-link, #skool-nav').forEach(a => a.href = SKOOL_URL);
+document.querySelectorAll('.price-label').forEach(el => el.textContent = PRICE);
+document.querySelectorAll('.price-label-th').forEach(el => el.textContent = 'Full Access — ' + PRICE);
 document.getElementById('install-btn').href = CHROME_STORE_URL;
 
 function openModal(){ document.getElementById('modal-bg').classList.add('open'); document.getElementById('email-input').focus(); }
@@ -257,7 +292,6 @@ async function submitEmail(){
       body: JSON.stringify({ email })
     });
     if(!res.ok) throw new Error('bad status');
-    // Idempotent: duplicates get the same success state.
     document.getElementById('modal-form').style.display='none';
     document.getElementById('modal-success').style.display='block';
   }catch(e){
